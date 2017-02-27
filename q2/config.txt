@@ -1,0 +1,11 @@
+/ rootEndpoint
+/user userRootEndpoint
+/user/friends userFriendsEndpoint
+/user/lists userListsEndpoint
+/user/X userEndpoint
+/user/X/friends userFriendsEndpoint
+/user/X/lists userListsEndpoint
+/user/X/lists/X userListIdEndpoint
+/X/friends userFriendsEndpoint
+/X/lists userListsEndpoint
+/settings settingsEndpoint

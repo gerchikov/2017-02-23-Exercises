@@ -1,0 +1,10 @@
+/
+/user
+/user/friends
+/user/123
+/user/123/friends
+/user/123/friends/zzz
+/user/friends/friends
+/abc/lists
+/settings
+/aaa/bbb
