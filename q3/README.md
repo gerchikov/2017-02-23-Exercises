@@ -40,11 +40,12 @@ Service tier can be replicated (for high availability/fault tolerance) or scaled
 
 #####Service Tier Option 2 - Managed
 
-[Amazon API Gateway](https://aws.amazon.com/api-gateway/), [AWS Lambda](https://aws.amazon.com/lambda/), Persistence (either option). Get ~infinite scalability and availability plus management, analytics and monitoring, for the price.
+[Amazon API Gateway](https://aws.amazon.com/api-gateway/) + [AWS Lambda](https://aws.amazon.com/lambda/) + Persistence (either option).  
+~Infinite scalability and availability plus management, analytics and monitoring, for the price.
 
 ###Persistence Tier
 
-#####Persistence Tier Option 1 - Relational (MySQL)
+#####Persistence Tier Option 1 - Relational ([MySQL](http://mysql.com) or [Amazon RDS](https://aws.amazon.com/rds/)<sup id="a1">[[1]](#f1)</sup>)
 
 ```$SQL
 CREATE TABLE check_ins (
@@ -87,4 +88,9 @@ Table: {user_id, venue_id, checkin_time}; partition key: user_id; range key: che
 Global Secondary Index: partition key: venue_id; range key: checkin_time.
 
 Endpoints are supported by (1) "Upsert" semantics (similar to the above); (2) table get; and (3) SGI get, respectively.
+
 ...Discuss!
+
+---
+
+<b id="f1">[1]</b> Amazon RDS does not support multi-master synchronous replication. [↩](#a1)
